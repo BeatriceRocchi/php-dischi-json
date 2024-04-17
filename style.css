@@ -17,6 +17,10 @@ header img {
   padding: 20px;
 }
 
+.info_box .info_item {
+  min-width: 90px;
+}
+
 a.btn_custom {
   display: block;
   margin: 0 auto;
