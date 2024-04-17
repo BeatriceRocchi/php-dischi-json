@@ -50,8 +50,7 @@ header img {
   cursor: pointer;
 }
 
-a.btn_custom {
-  display: block;
+.btn_custom {
   margin: 0 auto;
   width: fit-content;
   background-color: #18d860;
@@ -61,7 +60,8 @@ a.btn_custom {
   border-radius: 5px;
 }
 
-a.btn_custom:hover {
+.btn_custom:hover {
+  cursor: pointer;
   color: #ffffff;
   background-color: #159b48;
 }

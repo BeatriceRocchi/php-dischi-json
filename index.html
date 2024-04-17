@@ -58,12 +58,12 @@
                     {{ disk.author }}
                   </h6>
                   <h6 class="card-title fw-normal">{{ disk.year }}</h6>
-                  <a
-                    href="#"
+                  <div
                     class="btn_custom my-4"
                     @click="(activeDisk === '' || activeDisk != disk) ? activeDisk = disk : activeDisk = ''"
-                    >More info</a
                   >
+                    More info
+                  </div>
                   <!-- More info box: at click -->
                   <div class="info_box" v-if="activeDisk === disk">
                     <div class="text-end">
