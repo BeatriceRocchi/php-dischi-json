@@ -6,6 +6,7 @@
     "cover": "cover_dreamers.jpg",
     "genre": "classic",
     "tracks": 4,
+    "tracksList": ["Focus", "Heartbeat", "Limitless", "The Dream Continues"],
     "duration": "11min 29sec"
   },
   {
@@ -15,6 +16,13 @@
     "cover": "cover_see_you_tonight.jpg",
     "genre": "country",
     "tracks": 16,
+    "tracksList": [
+      "Now",
+      "See You Tonight",
+      "Get Gone With You",
+      "Feelin' It",
+      "Feel Good Summer Song"
+    ],
     "duration": "57min 36sec"
   },
   {
@@ -24,6 +32,13 @@
     "cover": "cover_red.jpg",
     "genre": "pop",
     "tracks": 22,
+    "tracksList": [
+      "Red",
+      "All Too Well",
+      "Everything Has Changed",
+      "We Are Never Ever Getting Back Together",
+      "I Knew You Were Trouble"
+    ],
     "duration": "1ora 30min"
   },
   {
@@ -33,6 +48,13 @@
     "cover": "cover_crash_party.jpg",
     "genre": "country",
     "tracks": 13,
+    "tracksList": [
+      "Roller Coaster",
+      "Play It Again",
+      "Out Like That",
+      "That's My Kind of Night",
+      "Crash My Party"
+    ],
     "duration": "44min 32sec"
   },
   {
@@ -42,6 +64,13 @@
     "cover": "cover_maggese.jpg",
     "genre": "pop",
     "tracks": 14,
+    "tracksList": [
+      "Marmellata #25",
+      "Le tue parole fanno male",
+      "Maggese",
+      "Ancora un pò",
+      "Quando non sai"
+    ],
     "duration": "59min 15sec"
   },
   {
@@ -51,6 +80,13 @@
     "cover": "cover_nobody.jpg",
     "genre": "pop",
     "tracks": 12,
+    "tracksList": [
+      "Plastic Flowers",
+      "Co-Pilot",
+      "Christmas Lights",
+      "Forget About It",
+      "Not How I Want To"
+    ],
     "duration": "32min 26sec"
   }
 ]

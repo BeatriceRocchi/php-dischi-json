@@ -66,7 +66,14 @@
                   >
                   <!-- More info box: at click -->
                   <div class="info_box" v-if="activeDisk === disk">
-                    <div class="d-flex justify-content-between">
+                    <div class="text-end">
+                      <i
+                        @click="activeDisk = ''"
+                        class="fa-solid fa-circle-xmark close_icon"
+                      ></i>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-5">
                       <div
                         class="info_item d-flex flex-column justify-content-center"
                       >
@@ -85,6 +92,15 @@
                         <i class="fa-regular fa-clock"></i>
                         <p class="card-text mt-2">{{ disk.duration }}</p>
                       </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <h5>Top tracks</h5>
+                      <ul class="fst-italic">
+                        <li v-for="(track, index) in disk.tracksList">
+                          {{track}}
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <!-- /More info box -->
