@@ -1,0 +1,18 @@
+body {
+  background-color: #1d2d3c;
+}
+
+header {
+  background-color: #06131f;
+  padding: 15px;
+}
+
+header img {
+  height: 40px;
+}
+
+.disk_card {
+  background-color: #112030;
+  color: #ffffff;
+  padding: 20px;
+}
