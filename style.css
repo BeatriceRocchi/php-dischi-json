@@ -16,3 +16,19 @@ header img {
   color: #ffffff;
   padding: 20px;
 }
+
+a.btn_custom {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #18d860;
+  color: #06131f;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a.btn_custom:hover {
+  color: #ffffff;
+  background-color: #159b48;
+}

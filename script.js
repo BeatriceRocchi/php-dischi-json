@@ -5,6 +5,7 @@ createApp({
     return {
       apiUrl: "server.php",
       diskList: [],
+      activeDisk: "",
     };
   },
 
