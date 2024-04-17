@@ -40,73 +40,21 @@
       <main>
         <div class="container w-75">
           <div class="row justify-content-center row-cols-3">
-            <div class="col my-3 text-center">
+            <div
+              v-for="(disk, id) in diskList"
+              :key="id"
+              class="col my-3 text-center"
+            >
               <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
+                <img
+                  :src="`./img/${disk.cover}`"
+                  class="card-img-top"
+                  alt="Immagine disco"
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
-                  <a href="#" class="btn btn-light">More info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col my-3 text-center">
-              <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
-                <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
-                  <a href="#" class="btn btn-light">More info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col my-3 text-center">
-              <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
-                <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
-                  <a href="#" class="btn btn-light">More info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col my-3 text-center">
-              <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
-                <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
-                  <a href="#" class="btn btn-light">More info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col my-3 text-center">
-              <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
-                <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
-                  <a href="#" class="btn btn-light">More info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col my-3 text-center">
-              <div class="card disk_card">
-                <img src="..." class="card-img-top" alt="Immagine disco" />
-                <div class="card-body">
-                  <h5 class="card-title">Nome disco</h5>
-                  <p class="card-text">Autore</p>
-                  <h3 class="card-title">Anno</h3>
+                  <h5 class="card-title">{{ disk.title }}</h5>
+                  <p class="card-text">{{ disk.author }}</p>
+                  <h3 class="card-title">{{ disk.year }}</h3>
                   <a href="#" class="btn btn-light">More info</a>
                 </div>
               </div>
