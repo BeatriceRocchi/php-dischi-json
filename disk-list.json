@@ -4,41 +4,53 @@
     "author": "Charles Leclerc",
     "year": 2024,
     "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "genre": "classic",
+    "tracks": 4,
+    "duration": "11min 29sec"
   },
   {
-    "title": "Dreamers",
-    "author": "Charles Leclerc",
-    "year": 2024,
-    "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "title": "See You Tonight",
+    "author": "Scotty McCreery",
+    "year": 2013,
+    "cover": "cover_see_you_tonight.jpg",
+    "genre": "country",
+    "tracks": 16,
+    "duration": "57min 36sec"
   },
   {
-    "title": "Dreamers",
-    "author": "Charles Leclerc",
-    "year": 2024,
-    "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "title": "Red",
+    "author": "Taylor Swift",
+    "year": 2012,
+    "cover": "cover_red.jpg",
+    "genre": "pop",
+    "tracks": 22,
+    "duration": "1ora 30min"
   },
   {
-    "title": "Dreamers",
-    "author": "Charles Leclerc",
-    "year": 2024,
-    "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "title": "Crash My Party",
+    "author": "Luke Bryan",
+    "year": 2013,
+    "cover": "cover_crash_party.jpg",
+    "genre": "country",
+    "tracks": 13,
+    "duration": "44min 32sec"
   },
   {
-    "title": "Dreamers",
-    "author": "Charles Leclerc",
-    "year": 2024,
-    "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "title": "Maggese",
+    "author": "Cesare Cremonini",
+    "year": 2005,
+    "cover": "cover_maggese.jpg",
+    "genre": "pop",
+    "tracks": 14,
+    "duration": "59min 15sec"
   },
   {
-    "title": "Dreamers",
-    "author": "Charles Leclerc",
-    "year": 2024,
-    "cover": "cover_dreamers.jpg",
-    "genre": "classic"
+    "title": "Mr. Nobody",
+    "author": "Zach Seabaugh",
+    "year": 2023,
+    "cover": "cover_nobody.jpg",
+    "genre": "pop",
+    "tracks": 12,
+    "duration": "32min 26sec"
   }
 ]
