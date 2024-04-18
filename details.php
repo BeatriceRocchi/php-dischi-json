@@ -16,9 +16,7 @@ $albumToShow = $album_list[$_GET['id']];
 
 </head>
 
-<body>
-
-
+<body class="details_body">
   <div class="details_upper d-flex align-items-end">
 
     <div class="details_img-box">
@@ -38,7 +36,19 @@ $albumToShow = $album_list[$_GET['id']];
 
   </div>
   <div class="details_lower">
-    BASSO
+    <div class="details_icons d-flex align-items-center">
+      <i class="fa-solid fa-circle-play"></i>
+      <i class="fa-solid fa-shuffle"></i>
+      <i class="fa-regular fa-circle-check"></i>
+      <i class="fa-regular fa-circle-down"></i>
+      <i class="fa-solid fa-ellipsis"></i>
+    </div>
+
+    <ul class="my-4 tracks_list">
+      <?php foreach ($albumToShow['tracksList'] as $track) : ?>
+        <li><?php echo $track ?></li>
+      <?php endforeach ?>
+    </ul>
   </div>
 </body>
 

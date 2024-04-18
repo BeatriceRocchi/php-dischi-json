@@ -80,38 +80,6 @@
                 <div class="btn_custom my-4" @click="(activeAlbum === '' || activeAlbum != album) ? activeAlbum = album : activeAlbum = ''"><a :href="`details.php?id=${id}`">More info</a>
                 </div>
 
-                <!-- More info box: at click -->
-                <!-- <div class="info_box" v-if="activeAlbum === album">
-                  <div class="text-end">
-                    <i @click="activeAlbum = ''" class="fa-solid fa-circle-xmark close_icon"></i>
-                  </div>
-
-                  <div class="d-flex justify-content-between mt-5">
-                    <div class="info_item d-flex flex-column justify-content-center">
-                      <i class="fa-solid fa-music"></i>
-                      <p class="card-text mt-2">{{ album.genre }}</p>
-                    </div>
-                    <div class="info_item d-flex flex-column justify-content-center">
-                      <i class="fa-solid fa-headphones"></i>
-                      <p class="card-text mt-2">{{ album.tracks }} tracks</p>
-                    </div>
-                    <div class="info_item d-flex flex-column justify-content-center">
-                      <i class="fa-regular fa-clock"></i>
-                      <p class="card-text mt-2">{{ album.duration }}</p>
-                    </div>
-                  </div>
-
-                  <div class="mt-4">
-                    <h5>Top tracks</h5>
-                    <ul class="fst-italic">
-                      <li v-for="(track, index) in album.tracksList">
-                        {{track}}
-                      </li>
-                    </ul>
-                  </div>
-                </div> -->
-                <!-- /More info box -->
-
                 <!-- Call to action box: like/dislike and delete -->
                 <div class="cta_box d-flex justify-content-end align-items-center">
                   <!-- Like icon -->

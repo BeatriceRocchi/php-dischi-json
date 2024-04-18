@@ -52,28 +52,6 @@ header img {
   position: relative;
 }
 
-/* Style for more info on the index.php page */
-/* .info_box {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-}
-
-.info_box .info_item {
-  min-width: 90px;
-}
-
-.close_icon {
-  font-size: 2rem;
-  text-align: end;
-  color: #18d860;
-} */
-
 .cta_box i {
   font-size: 1.2rem;
   color: #18d860;
@@ -87,10 +65,14 @@ header img {
 }
 
 /* DETAILS.php */
+.details_body {
+  background-color: #06131f;
+}
+
 .details_upper {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 120px;
-  padding-bottom: 50px;
+  background-color: #293846;
+  padding: 80px;
+  padding-bottom: 40px;
 }
 
 .details_img-box {
@@ -105,6 +87,28 @@ header img {
 }
 
 .details_lower {
-  height: 300px;
-  background: linear-gradient(rgba(255, 255, 255, 0.05), #06131f);
+  height: 100%;
+  padding: 0 120px;
+  margin: 0;
+  background: linear-gradient(#293846, #06131f);
+}
+
+.details_icons {
+  font-size: 2rem;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.details_icons i {
+  padding-right: 20px;
+}
+
+.fa-circle-play {
+  font-size: 3rem;
+  color: #18d860;
+}
+
+.tracks_list li {
+  color: #ffffff;
+  padding: 10px;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.2);
 }
