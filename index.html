@@ -169,13 +169,13 @@
             >
               <div class="card album_card">
                 <img
-                  :src="`./img/${album.cover}`"
+                  :src="album.cover"
                   class="card-img-top"
                   alt="Immagine disco"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">{{ album.title }}</h5>
-                  <h6 class="card-text fst-italic fw-normal">
+                  <h5 class="card-title text-capitalize">{{ album.title }}</h5>
+                  <h6 class="card-text fst-italic fw-normal text-capitalize">
                     {{ album.author }}
                   </h6>
                   <h6 class="card-title fw-normal">{{ album.year }}</h6>

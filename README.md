@@ -11,4 +11,5 @@ Creare una web-app che permetta di leggere una lista di dischi presente nel nost
 5. Creazione nuovo disco:
    - Creare un'area per l'inserimento di un nuovo disco formata da campi di input e un button per inviare i dati.
    - Inizializzare un oggetto newDisk in script.js che sarà popolato con i dati inseriti nei campi di input tramite un v-model.
-   - al click sul button al termine dell'area di inserimento, richiamare la funzione addNewDisk() che struttureà i dati, invierà con axios i dati in post e poi aggiornerà l'elenco di dischi
+   - al click sul button al termine dell'area di inserimento, richiamare la funzione addNewDisk() che strutturerà i dati, invierà con axios i dati in post e poi aggiornerà l'elenco di dischi
+   - in server.php gestire logica di aggiunta del disco nella lista, creando un nuovo album da aggiungere.
