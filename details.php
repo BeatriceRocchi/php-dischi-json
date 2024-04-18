@@ -45,8 +45,9 @@ $albumToShow = $album_list[$_GET['id']];
     </div>
 
     <ul class="my-4 tracks_list">
-      <?php foreach ($albumToShow['tracksList'] as $track) : ?>
-        <li><?php echo $track ?></li>
+      <h4 class="text-center">Top tracks in the album</h4>
+      <?php foreach ($albumToShow['tracksList'] as $key => $track) : ?>
+        <li><?php echo $key + 1 ?>. <?php echo $track ?></li>
       <?php endforeach ?>
     </ul>
   </div>

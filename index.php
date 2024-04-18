@@ -40,13 +40,13 @@
               <input v-model="newAlbum.author" type="text" class="form-control" placeholder="Author" aria-label="Author" />
             </div>
             <div class="col">
-              <input v-model="newAlbum.year" type="number" min="1900" max="2024" class="form-control" placeholder="Year" aria-label="Year" />
+              <input v-model="newAlbum.year" type="text" class="form-control" placeholder="Year" aria-label="Year" />
             </div>
             <div class="col">
               <input v-model="newAlbum.genre" type="text" class="form-control" placeholder="Musical Genre" aria-label="Musical Genre" />
             </div>
             <div class="col">
-              <input v-model="newAlbum.tracks" type="number" class="form-control" placeholder="Number of tracks" aria-label="Number of tracks" />
+              <input v-model="newAlbum.tracks" type="text" class="form-control" placeholder="Number of tracks" aria-label="Number of tracks" />
             </div>
             <div class="col">
               <input v-model="newAlbum.duration" type="text" class="form-control" placeholder="Album duration" aria-label="Album duration" />
@@ -59,14 +59,14 @@
             </div>
           </div>
           <button @click="addNewAlbum()" class="btn btn_custom mt-3">
-            Aggiungi
+            Add album
           </button>
         </div>
       </div>
       <!-- /Offcanvas -->
 
       <div class="container w-75">
-        <div class="row justify-content-center row-cols-3">
+        <div class="row row-cols-3">
           <!-- Card -->
           <div v-for="(album, id) in albumList" :key="id" class="col my-3 text-center">
             <div class="card album_card">
@@ -77,7 +77,7 @@
                   {{ album.author }}
                 </h6>
                 <h6 class="card-title fw-normal">{{ album.year }}</h6>
-                <div class="btn_custom my-4" @click="(activeAlbum === '' || activeAlbum != album) ? activeAlbum = album : activeAlbum = ''"><a :href="`details.php?id=${id}`">More info</a>
+                <div class="btn_custom my-4"><a :href="`details.php?id=${id}`">More info</a>
                 </div>
 
                 <!-- Call to action box: like/dislike and delete -->

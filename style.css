@@ -87,6 +87,7 @@ header img {
 }
 
 .details_lower {
+  color: #ffffff;
   height: 100%;
   padding: 0 120px;
   margin: 0;
@@ -102,13 +103,22 @@ header img {
   padding-right: 20px;
 }
 
-.fa-circle-play {
+.details_icons i:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.details_icons .fa-circle-play {
   font-size: 3rem;
   color: #18d860;
 }
 
+.details_icons .fa-circle-play:hover {
+  color: #159b48;
+  cursor: pointer;
+}
+
 .tracks_list li {
-  color: #ffffff;
   padding: 10px;
   border-bottom: 2px solid rgba(245, 245, 245, 0.2);
 }
