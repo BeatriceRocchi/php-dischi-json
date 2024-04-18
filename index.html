@@ -46,7 +46,7 @@
       </header>
 
       <main class="text-center">
-        <!-- Offcanvas to add a new disk -->
+        <!-- Offcanvas to add a new album -->
         <button
           class="btn btn_custom mt-3"
           type="button"
@@ -79,7 +79,7 @@
             <div class="row row-cols-2 g-2">
               <div class="col">
                 <input
-                  v-model="newDisk.title"
+                  v-model="newAlbum.title"
                   type="text"
                   class="form-control"
                   placeholder="Title"
@@ -88,7 +88,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.author"
+                  v-model="newAlbum.author"
                   type="text"
                   class="form-control"
                   placeholder="Author"
@@ -97,7 +97,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.year"
+                  v-model="newAlbum.year"
                   type="number"
                   min="1900"
                   max="2024"
@@ -108,7 +108,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.genre"
+                  v-model="newAlbum.genre"
                   type="text"
                   class="form-control"
                   placeholder="Musical Genre"
@@ -117,7 +117,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.tracks"
+                  v-model="newAlbum.tracks"
                   type="number"
                   class="form-control"
                   placeholder="Number of tracks"
@@ -126,7 +126,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.duration"
+                  v-model="newAlbum.duration"
                   type="text"
                   class="form-control"
                   placeholder="Album duration"
@@ -135,7 +135,7 @@
               </div>
               <div class="col">
                 <input
-                  v-model="newDisk.cover"
+                  v-model="newAlbum.cover"
                   type="text"
                   class="form-control"
                   placeholder="Cover path"
@@ -144,7 +144,7 @@
               </div>
               <div class="col">
                 <textarea
-                  v-model="newDisk.tracksList"
+                  v-model="newAlbum.tracksList"
                   class="form-control"
                   placeholder="Tracks list"
                   rows="8"
@@ -152,7 +152,7 @@
                 ></textarea>
               </div>
             </div>
-            <button @click="addNewDisk()" class="btn btn_custom mt-3">
+            <button @click="addNewAlbum()" class="btn btn_custom mt-3">
               Aggiungi
             </button>
           </div>
@@ -163,33 +163,33 @@
           <div class="row justify-content-center row-cols-3">
             <!-- Card -->
             <div
-              v-for="(disk, id) in diskList"
+              v-for="(album, id) in albumList"
               :key="id"
               class="col my-3 text-center"
             >
-              <div class="card disk_card">
+              <div class="card album_card">
                 <img
-                  :src="`./img/${disk.cover}`"
+                  :src="`./img/${album.cover}`"
                   class="card-img-top"
                   alt="Immagine disco"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">{{ disk.title }}</h5>
+                  <h5 class="card-title">{{ album.title }}</h5>
                   <h6 class="card-text fst-italic fw-normal">
-                    {{ disk.author }}
+                    {{ album.author }}
                   </h6>
-                  <h6 class="card-title fw-normal">{{ disk.year }}</h6>
+                  <h6 class="card-title fw-normal">{{ album.year }}</h6>
                   <div
                     class="btn_custom my-4"
-                    @click="(activeDisk === '' || activeDisk != disk) ? activeDisk = disk : activeDisk = ''"
+                    @click="(activeAlbum === '' || activeAlbum != album) ? activeAlbum = album : activeAlbum = ''"
                   >
                     More info
                   </div>
                   <!-- More info box: at click -->
-                  <div class="info_box" v-if="activeDisk === disk">
+                  <div class="info_box" v-if="activeAlbum === album">
                     <div class="text-end">
                       <i
-                        @click="activeDisk = ''"
+                        @click="activeAlbum = ''"
                         class="fa-solid fa-circle-xmark close_icon"
                       ></i>
                     </div>
@@ -199,26 +199,26 @@
                         class="info_item d-flex flex-column justify-content-center"
                       >
                         <i class="fa-solid fa-music"></i>
-                        <p class="card-text mt-2">{{ disk.genre }}</p>
+                        <p class="card-text mt-2">{{ album.genre }}</p>
                       </div>
                       <div
                         class="info_item d-flex flex-column justify-content-center"
                       >
                         <i class="fa-solid fa-headphones"></i>
-                        <p class="card-text mt-2">{{ disk.tracks }} tracks</p>
+                        <p class="card-text mt-2">{{ album.tracks }} tracks</p>
                       </div>
                       <div
                         class="info_item d-flex flex-column justify-content-center"
                       >
                         <i class="fa-regular fa-clock"></i>
-                        <p class="card-text mt-2">{{ disk.duration }}</p>
+                        <p class="card-text mt-2">{{ album.duration }}</p>
                       </div>
                     </div>
 
                     <div class="mt-4">
                       <h5>Top tracks</h5>
                       <ul class="fst-italic">
-                        <li v-for="(track, index) in disk.tracksList">
+                        <li v-for="(track, index) in album.tracksList">
                           {{track}}
                         </li>
                       </ul>

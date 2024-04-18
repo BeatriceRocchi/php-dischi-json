@@ -4,9 +4,9 @@ createApp({
   data() {
     return {
       apiUrl: "server.php",
-      diskList: [],
-      activeDisk: "",
-      newDisk: {
+      albumList: [],
+      activeAlbum: "",
+      newAlbum: {
         title: "",
         author: "",
         year: 0,
@@ -21,14 +21,14 @@ createApp({
 
   methods: {
     getApi() {
-      console.log(this.newDisk);
+      console.log(this.newAlbum);
       axios.get(this.apiUrl).then((result) => {
-        this.diskList = result.data;
+        this.albumList = result.data;
       });
     },
 
-    addNewDisk() {
-      console.log(this.newDisk);
+    addNewAlbum() {
+      console.log(this.newAlbum);
     },
   },
   mounted() {
