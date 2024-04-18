@@ -17,8 +17,29 @@ $albumToShow = $album_list[$_GET['id']];
 </head>
 
 <body>
-  <h1 class="text-white"><?php echo $albumToShow['title'] ?></h1>
-  <div class="btn_custom my-4"><a href="index.php">Back to HomePage</a></div>
+
+
+  <div class="details_upper d-flex align-items-end">
+
+    <div class="details_img-box">
+      <img src="<?php echo $albumToShow['cover'] ?>" alt="<?php echo $albumToShow['title'] ?>">
+    </div>
+
+    <div class="text-white ms-4">
+      <h1>
+        <?php echo $albumToShow['title'] ?>
+      </h1>
+      <h6>
+        <?php echo $albumToShow['author'] ?> • <?php echo $albumToShow['year'] ?> • <?php echo $albumToShow['tracks'] ?> tracks • <?php echo $albumToShow['duration'] ?>
+      </h6>
+    </div>
+
+    <div class="btn_custom my-4"><a href="index.php">Back to HomePage</a></div>
+
+  </div>
+  <div class="details_lower">
+    BASSO
+  </div>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
   background-color: #1d2d3c;
 }
@@ -13,6 +14,23 @@ a {
   text-decoration: none;
 }
 
+.btn_custom {
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #18d860;
+  color: #06131f;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn_custom:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #159b48;
+}
+
+/* INDEX.php */
 header {
   background-color: #06131f;
   padding: 15px;
@@ -68,18 +86,25 @@ header img {
   cursor: pointer;
 }
 
-.btn_custom {
-  margin: 0 auto;
-  width: fit-content;
-  background-color: #18d860;
-  color: #06131f;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
+/* DETAILS.php */
+.details_upper {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 120px;
+  padding-bottom: 50px;
 }
 
-.btn_custom:hover {
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #159b48;
+.details_img-box {
+  height: 250px;
+  width: 250px;
+}
+
+.details_img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.details_lower {
+  height: 300px;
+  background: linear-gradient(rgba(255, 255, 255, 0.05), #06131f);
 }
