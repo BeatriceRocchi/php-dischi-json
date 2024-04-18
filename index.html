@@ -11,6 +11,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- FontAwesome -->
     <link
@@ -34,10 +39,116 @@
   <body>
     <div id="app">
       <header>
-        <img src="./img/logo.png" alt="Logo Spotify" />
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="./img/logo.png" alt="Logo Spotify" />
+          <h2 class="ms-3 text-white">My playlist</h2>
+        </div>
       </header>
 
-      <main>
+      <main class="text-center">
+        <!-- Offcanvas to add a new disk -->
+        <button
+          class="btn btn_custom mt-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#staticBackdrop"
+          aria-controls="staticBackdrop"
+        >
+          Add a new album
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">
+              New album info:
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row row-cols-2 g-2">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Title"
+                  aria-label="Title"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Author"
+                  aria-label="Author"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  min="1900"
+                  max="2024"
+                  class="form-control"
+                  placeholder="Year"
+                  aria-label="Year"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Musical Genre"
+                  aria-label="Musical Genre"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Number of tracks"
+                  aria-label="Number of tracks"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Album duration"
+                  aria-label="Album duration"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Cover path"
+                  aria-label="Cover path"
+                />
+              </div>
+              <div class="col">
+                <textarea
+                  class="form-control"
+                  placeholder="Tracks list"
+                  rows="8"
+                  id="tracksList"
+                ></textarea>
+              </div>
+            </div>
+            <button class="btn btn_custom mt-3">Aggiungi album</button>
+          </div>
+        </div>
+        <!-- /Offcanvas -->
+
         <div class="container w-75">
           <div class="row justify-content-center row-cols-3">
             <!-- Card -->
@@ -84,7 +195,7 @@
                         class="info_item d-flex flex-column justify-content-center"
                       >
                         <i class="fa-solid fa-headphones"></i>
-                        <p class="card-text mt-2">{{ disk.tracks }} tracce</p>
+                        <p class="card-text mt-2">{{ disk.tracks }} tracks</p>
                       </div>
                       <div
                         class="info_item d-flex flex-column justify-content-center"
