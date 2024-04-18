@@ -20,7 +20,7 @@ header img {
 .album_card {
   background-color: #112030;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 20px 10px;
   position: relative;
 }
 
@@ -45,7 +45,13 @@ header img {
   color: #18d860;
 }
 
-.close_icon:hover {
+.cta_box i {
+  font-size: 1.2rem;
+  color: #18d860;
+}
+
+.close_icon:hover,
+.cta_box i:hover {
   color: #159b48;
   cursor: pointer;
 }

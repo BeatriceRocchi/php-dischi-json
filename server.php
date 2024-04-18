@@ -19,5 +19,12 @@ if (isset($_POST['newAlbumTitle'])) {
   file_put_contents('album-list.json', json_encode($album_list));
 };
 
+// Logic to delete an album
+if (isset($_POST['idAlbumToDelete'])) {
+  array_splice($album_list, $_POST['idAlbumToDelete'], 1);
+
+  file_put_contents('album-list.json', json_encode($album_list));
+};
+
 header('Content-Type: application/json');
 echo json_encode($album_list);

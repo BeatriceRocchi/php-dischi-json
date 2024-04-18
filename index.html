@@ -225,6 +225,17 @@
                     </div>
                   </div>
                   <!-- /More info box -->
+
+                  <!-- Delete icon section to remove the album from the playlist -->
+                  <div
+                    class="cta_box d-flex justify-content-end align-items-center"
+                  >
+                    <i
+                      @click="deleteAlbum(id)"
+                      class="fa-regular fa-trash-can"
+                    ></i>
+                  </div>
+                  <!-- /Delete icon section -->
                 </div>
               </div>
             </div>
