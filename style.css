@@ -17,6 +17,11 @@ header img {
   height: 40px;
 }
 
+.offcanvas_custom {
+  background-color: #1d2d3c;
+  color: #ffffff;
+}
+
 .album_card {
   background-color: #112030;
   color: #ffffff;
