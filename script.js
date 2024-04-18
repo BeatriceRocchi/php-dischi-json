@@ -15,6 +15,7 @@ createApp({
         tracks: 0,
         tracksList: [],
         duration: "",
+        like: false,
       },
     };
   },
@@ -40,11 +41,32 @@ createApp({
       axios.post(this.apiUrl, data).then((result) => {
         this.albumList = result.data;
       });
+
+      this.newAlbum = {
+        title: "",
+        author: "",
+        year: 0,
+        cover: "",
+        genre: "",
+        tracks: 0,
+        tracksList: [],
+        duration: "",
+        like: false,
+      };
     },
 
     deleteAlbum(id) {
       const data = new FormData();
       data.append("idAlbumToDelete", id);
+
+      axios.post(this.apiUrl, data).then((result) => {
+        this.albumList = result.data;
+      });
+    },
+
+    toggleLike(id) {
+      const data = new FormData();
+      data.append("idAlbumToToggle", id);
 
       axios.post(this.apiUrl, data).then((result) => {
         this.albumList = result.data;

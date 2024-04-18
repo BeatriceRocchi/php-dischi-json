@@ -226,16 +226,31 @@
                   </div>
                   <!-- /More info box -->
 
-                  <!-- Delete icon section to remove the album from the playlist -->
+                  <!-- Call to action box: like/dislike and delete -->
                   <div
                     class="cta_box d-flex justify-content-end align-items-center"
                   >
+                    <!-- Like icon -->
+                    <i
+                      @click="toggleLike(id)"
+                      v-if="album.like"
+                      class="fa-solid fa-heart"
+                    ></i>
+                    <i
+                      @click="toggleLike(id)"
+                      v-else
+                      class="fa-regular fa-heart"
+                    ></i>
+                    <!-- /Like icon -->
+
+                    <!-- Delete icon to remove the album from the playlist -->
                     <i
                       @click="deleteAlbum(id)"
                       class="fa-regular fa-trash-can"
                     ></i>
+                    <!-- /Delete icon -->
                   </div>
-                  <!-- /Delete icon section -->
+                  <!-- /Call to action box -->
                 </div>
               </div>
             </div>

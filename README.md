@@ -17,3 +17,7 @@ Creare una web-app che permetta di leggere una lista di dischi presente nel nost
    - Creare un'icona su ogni card/album per l'eliminazione dell'album
    - al click sull'icona, richiamare la funzione deleteAlbum(id) che riceve l'id dell'album e strutturerà i dati, invierà con axios l'indice dell'album in post e poi aggiornerà l'elenco di album
    - in server.php gestire logica di rimozione dell'album della lista ad indice id.
+7. Toggle mi piace ad un album:
+   - Creare un'icona su ogni card/album: piena se l'album ha la proprietà like=true piace, vuota se la proprietà è false
+   - al click sull'icona, richiamare la funzione toggleLike(id) che riceve l'id dell'album e strutturerà i dati, invierà con axios l'indice dell'album in post e poi aggiornerà l'elenco di album
+   - in server.php gestire logica di toggle del mi piace dell'album della lista ad indice id.

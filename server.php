@@ -26,5 +26,12 @@ if (isset($_POST['idAlbumToDelete'])) {
   file_put_contents('album-list.json', json_encode($album_list));
 };
 
+// Logic to toggle like on an album
+if (isset($_POST['idAlbumToToggle'])) {
+  $album_list[$_POST['idAlbumToToggle']]['like'] = !$album_list[$_POST['idAlbumToToggle']]['like'];
+
+  file_put_contents('album-list.json', json_encode($album_list));
+};
+
 header('Content-Type: application/json');
 echo json_encode($album_list);
